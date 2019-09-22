@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agrow">
+    <!-- the internet permission -->
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+		
+        <activity android:name=".controller.Eachagrotravel"></activity>
+        <activity android:name=".controller.AgroTravelall" />
+        <activity android:name=".controller.ReviewAll" />
+        <activity android:name=".controller.Customer_reviews" />
+        <activity android:name=".controller.rating" />
+        <activity android:name=".controller.Userhome" />
+        <activity
+            android:name=".controller.Userwindow"
+            android:label="Agrow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".model.singleCart" />
+        <activity android:name=".controller.finalCart" />
+        <activity android:name=".controller.Notification" />
+        <activity android:name=".controller.addtocart" />
+        <activity android:name=".controller.phnnumchange" />
+        <activity android:name=".controller.passwordChange" />
+        <activity android:name=".controller.search2" />
+        <activity android:name=".controller.MainActivity" />
+        <activity android:name=".controller.eachadvertise" />
+        <activity android:name=".controller.showproduct" />
+        <activity android:name=".controller.CurrentLocationActivity" />
+        <activity android:name=".controller.addproduct" />
+        <activity android:name=".controller.FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.Signup">
+            <intent-filter>
+                <action android:name="android.intent.action.MYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

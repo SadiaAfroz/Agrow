@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context=".controller.addtocart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/cartImgeview"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total Amount"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/down"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/total_amount"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-159dp"
+                android:background="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="67dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/up"
+                android:layout_marginRight="-63dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:cursorVisible="false"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"
+
+
+
+                />
+
+
+            <Button
+                android:id="@+id/up"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/total_amount"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-71dp"
+
+
+                android:background="@drawable/ic_arrow_drop_up_black_24dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="15dp"
+
+                android:focusableInTouchMode="true"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/divison1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:hint="Divison"
+                    android:textSize="20sp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="15dp"
+
+                android:focusableInTouchMode="true"
+                >
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/district1"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="District"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/shifting_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Cost"
+                android:textSize="20sp"
+                android:layout_marginTop="220dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/shifting_cost"
+                android:layout_marginRight="-132dp"
+                android:textAlignment="center"
+                android:cursorVisible="false"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/shape"
+                android:id="@+id/shiftcostshow"
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/sum_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cost"
+                android:textSize="20sp"
+                android:layout_marginTop="260dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="67dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/sum_cost"
+                android:layout_marginRight="-154dp"
+                android:textAlignment="center"
+                android:cursorVisible="false"
+                android:layout_marginTop="260dp"
+                android:background="@drawable/shape"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/costshow"
+
+
+
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/costshow"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_rounded"
+                    android:text="Order"
+                    android:id="@+id/orderbtn"
+
+                    />
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

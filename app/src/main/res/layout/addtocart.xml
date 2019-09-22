@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.MainActivity">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+
+        />
+    <ImageView
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/ic_action_voice_search"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total Amount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/total_amount"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-159dp"
+            android:background="@drawable/ic_attach_file_black_24dp" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/up"
+            android:layout_marginRight="-63dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:cursorVisible="false"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+
+
+
+            />
+
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/total_amount"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-71dp"
+
+
+            android:background="@drawable/ic_action_navigation_close_inverted" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Add Your Location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/button_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/location"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="-71dp"
+
+
+            android:background="@drawable/ic_action_navigation_close" />
+
+
+
+        <TextView
+            android:id="@+id/shifting_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shifting Cost"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+
+
+            />
+
+        <EditText
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/shifting_cost"
+            android:layout_marginRight="-132dp"
+            android:textAlignment="center"
+            android:cursorVisible="false"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_shape"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/sum_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost"
+            android:textSize="20sp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+
+
+            />
+
+        <EditText
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/sum_cost"
+            android:layout_marginRight="-154dp"
+            android:textAlignment="center"
+            android:cursorVisible="false"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/button_shape"
+
+
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
